@@ -1,3 +1,3 @@
 # New project
 
-TODO: Update readme
+This is a new project. What should I name it?
