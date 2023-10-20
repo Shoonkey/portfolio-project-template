@@ -6,6 +6,7 @@ import {
   Select,
   Tooltip,
   VisuallyHidden,
+  useColorMode,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
@@ -17,11 +18,11 @@ import Homepage from "../pages/Homepage";
 
 function Root() {
   const { t, i18n } = useTranslation();
-  const { isSubapp, theme, setTheme } = useAppSettings();
-
+  const { colorMode: theme, setColorMode: setTheme } = useColorMode();
   const navigate = useNavigate();
   const location = useLocation();
-
+  
+  const { isSubapp } = useAppSettings();
   const backgroundColor = useColorModeValue("gray.200", "gray.800");
 
   return (

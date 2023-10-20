@@ -11,7 +11,6 @@ import AppSettingsProvider from "./components/AppSettingsProvider";
 import Root from "./components/Root";
 import setupI18N from "./i18n";
 
-
 interface AppProps {
   isSubapp?: boolean;
   theme?: "dark" | "light";
@@ -38,9 +37,7 @@ function App({
   return (
     <I18nextProvider i18n={i18n}>
       <ChakraProvider>
-        <AppSettingsProvider
-          settings={{ isSubapp, theme, language: i18n.language }}
-        >
+        <AppSettingsProvider isSubapp={isSubapp} theme={theme}>
           <RouterProvider router={router} />
         </AppSettingsProvider>
       </ChakraProvider>
