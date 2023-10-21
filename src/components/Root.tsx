@@ -86,11 +86,6 @@ function Root() {
       <Flex
         flexDir="column"
         flexGrow={1}
-        minWidth="300px"
-        w="80%"
-        mx="auto"
-        px={0}
-        pb={8}
       >
         <Routes>
           <Route path="/" element={<Homepage />} />
