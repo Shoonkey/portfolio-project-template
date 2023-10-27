@@ -1,5 +1,8 @@
 {
   "appTitle": "App title",
+  "selectLanguage": "Select language",
+  "appSettings": "App settings",
+  "changeTheme": "Change theme",
   "pages": {
     "home": {
       "meta": {

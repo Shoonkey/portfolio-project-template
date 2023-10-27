@@ -1,5 +1,8 @@
 {
-  "appTitle": "Título del app",
+  "appTitle": "Título do app",
+  "selectLanguage": "Selecionar linguagem",
+  "appSettings": "Configurações do app",
+  "changeTheme": "Mudar tema",
   "pages": {
     "home": {
       "meta": {
